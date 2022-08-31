@@ -1,7 +1,7 @@
 import os
 from typing import Optional
 
-from PIL.Image import Image
+from PIL import Image
 from torch.utils.data import Dataset, DataLoader
 
 import pytorch_lightning as pl
@@ -10,7 +10,7 @@ from torchvision.transforms import RandomHorizontalFlip, RandomRotation, ColorJi
 
 
 class AgeDataset(Dataset):
-    def __init__(self, data, transforms, path='./train'):
+    def __init__(self, data, transforms, path='./data/train'):
         self.data = data
         self.transforms = transforms
         self.path = path
@@ -28,7 +28,7 @@ class AgeDataset(Dataset):
 
 
 class AgePredictionData(pl.LightningDataModule):
-    def __init__(self, train_data, val_data, train_batch=64, train_path='./train', val_path='./val'):
+    def __init__(self, train_data, val_data, train_batch=64, train_path='./data/train', val_path='./data/val'):
         super().__init__()
         self.train_path = train_path
         self.val_path = val_path

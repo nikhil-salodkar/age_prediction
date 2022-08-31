@@ -26,7 +26,7 @@ def train_model(train_module, data_module):
     checkpoint_callback = ModelCheckpoint(filename='{epoch}-{val-acc:.3f}', save_top_k=1, monitor='val-acc'
                                           , mode='max')
     early_stopping = EarlyStopping(monitor="val-acc", patience=20, verbose=False, mode="max")
-    wandb_logger = WandbLogger(project="Age_Prediction",
+    wandb_logger = WandbLogger(project="Age_Prediction", save_dir='lightning_logs',
                                name="resnet101_64_low_lr_batch_normalized_updated_augmented_adamw")
 
     trainer = pl.Trainer(accelerator='gpu', fast_dev_run=False, max_epochs=100,
