@@ -1,81 +1,105 @@
-[I 17:00:11.401 NotebookApp] Serving notebooks from local directory: /home/antpc/Desktop/portfolio_projects/age_prediction/notebooks
-[I 17:00:11.401 NotebookApp] Jupyter Notebook 6.4.12 is running at:
-[I 17:00:11.401 NotebookApp] http://localhost:8888/?token=234adb0585621e26024732b5edb9badf658f16c105757430
-[I 17:00:11.401 NotebookApp]  or http://127.0.0.1:8888/?token=234adb0585621e26024732b5edb9badf658f16c105757430
-[I 17:00:11.401 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[C 17:00:11.422 NotebookApp] 
+[I 11:41:17.899 NotebookApp] Serving notebooks from local directory: /home/antpc/Desktop/portfolio_projects/age_prediction/notebooks
+[I 11:41:17.899 NotebookApp] Jupyter Notebook 6.4.12 is running at:
+[I 11:41:17.899 NotebookApp] http://localhost:8888/?token=3388bf760e16d85ee161f4b2d0a293e7548995703188f652
+[I 11:41:17.899 NotebookApp]  or http://127.0.0.1:8888/?token=3388bf760e16d85ee161f4b2d0a293e7548995703188f652
+[I 11:41:17.899 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 11:41:17.922 NotebookApp] 
     
     To access the notebook, open this file in a browser:
-        file:///home/antpc/.local/share/jupyter/runtime/nbserver-85625-open.html
+        file:///home/antpc/.local/share/jupyter/runtime/nbserver-18529-open.html
     Or copy and paste one of these URLs:
-        http://localhost:8888/?token=234adb0585621e26024732b5edb9badf658f16c105757430
-     or http://127.0.0.1:8888/?token=234adb0585621e26024732b5edb9badf658f16c105757430
-[I 17:00:15.292 NotebookApp] Creating new notebook in 
-[W 17:00:15.984 NotebookApp] 404 GET /nbextensions/pydeck/extension.js?v=20220901170011 (127.0.0.1) 5.340000ms referer=http://localhost:8888/notebooks/Untitled.ipynb?kernel_name=python3
-[I 17:00:15.988 NotebookApp] Kernel started: c652a43f-a5eb-4822-ae58-39d646fcdcd9, name: python3
-[W 17:00:15.997 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20220901170011 (127.0.0.1) 0.890000ms referer=http://localhost:8888/notebooks/Untitled.ipynb?kernel_name=python3
-[I 17:02:15.979 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:03:48.479 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:04:15.976 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:05:03.555 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:05:10.255 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:06:15.982 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:08:15.988 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:09:01.562 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:10:15.983 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:11:00.106 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:11:19.691 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:12:15.990 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:14:15.980 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:14:27.152 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:16:15.985 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:17:28.476 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:18:15.990 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:20:09.421 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:20:15.986 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:21:12.043 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:22:15.988 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:24:15.987 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:26:15.989 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:28:15.988 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:29:21.542 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:30:15.988 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:32:15.990 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:34:15.992 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:34:39.538 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:36:08.499 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:36:15.998 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:37:09.575 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:37:28.789 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:37:30.999 NotebookApp] Kernel interrupted: c652a43f-a5eb-4822-ae58-39d646fcdcd9
-[I 17:37:33.234 NotebookApp] Starting buffering for c652a43f-a5eb-4822-ae58-39d646fcdcd9:8c3b1c6813c240788ab5e113609a98a3
-[I 17:37:34.573 NotebookApp] Kernel restarted: c652a43f-a5eb-4822-ae58-39d646fcdcd9
-[I 17:37:34.580 NotebookApp] Restoring connection for c652a43f-a5eb-4822-ae58-39d646fcdcd9:8c3b1c6813c240788ab5e113609a98a3
-[I 17:37:35.085 NotebookApp] Replaying 3 buffered messages
-[I 17:38:16.006 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:39:22.162 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:40:16.008 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:42:05.299 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:42:16.010 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:44:16.000 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:46:15.999 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:48:16.009 NotebookApp] Saving file at /age_prediction.ipynb
-[I 17:54:16.038 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:12:16.051 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:13:47.914 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:14:16.045 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:14:43.999 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:16:16.056 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:26:16.058 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:28:16.056 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:30:16.067 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:31:47.113 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:31:50.425 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:32:16.056 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:34:16.064 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:36:38.174 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:36:43.483 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:37:21.018 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:37:42.844 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:38:39.533 NotebookApp] Saving file at /age_prediction.ipynb
-[I 20:23:58.302 NotebookApp] Starting buffering for c652a43f-a5eb-4822-ae58-39d646fcdcd9:8c3b1c6813c240788ab5e113609a98a3
+        http://localhost:8888/?token=3388bf760e16d85ee161f4b2d0a293e7548995703188f652
+     or http://127.0.0.1:8888/?token=3388bf760e16d85ee161f4b2d0a293e7548995703188f652
+[I 11:41:24.442 NotebookApp] Creating new notebook in 
+[W 11:41:25.148 NotebookApp] 404 GET /nbextensions/pydeck/extension.js?v=20220902114117 (127.0.0.1) 5.660000ms referer=http://localhost:8888/notebooks/Untitled.ipynb?kernel_name=python3
+[I 11:41:25.152 NotebookApp] Kernel started: 95429652-562c-4437-a8d6-74e9f75c2a1d, name: python3
+[W 11:41:25.156 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20220902114117 (127.0.0.1) 1.210000ms referer=http://localhost:8888/notebooks/Untitled.ipynb?kernel_name=python3
+[I 11:42:43.000 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 11:43:25.136 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 11:44:17.516 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 11:45:25.150 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 11:47:25.138 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 11:49:25.141 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 11:50:35.794 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 11:51:25.135 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 11:51:40.213 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 11:52:34.326 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 11:53:04.644 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 11:53:25.138 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 11:55:25.147 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 11:57:13.050 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 11:57:25.147 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 11:59:25.144 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:01:23.968 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:02:39.307 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:02:47.587 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:03:17.266 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:03:23.317 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:04:01.913 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:05:25.206 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:07:25.171 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:09:25.178 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:10:04.348 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:11:25.184 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:13:25.188 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:14:30.958 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:14:34.443 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:14:44.281 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:15:25.179 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:17:25.183 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:19:25.178 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:21:25.194 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:23:25.188 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:24:11.239 NotebookApp] Starting buffering for 95429652-562c-4437-a8d6-74e9f75c2a1d:1dc0e55ec5a8423886dc78e1492a016f
+[I 12:24:12.582 NotebookApp] Kernel restarted: 95429652-562c-4437-a8d6-74e9f75c2a1d
+[I 12:24:12.588 NotebookApp] Restoring connection for 95429652-562c-4437-a8d6-74e9f75c2a1d:1dc0e55ec5a8423886dc78e1492a016f
+[I 12:24:13.100 NotebookApp] Replaying 3 buffered messages
+[I 12:25:25.176 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:26:50.244 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:27:25.174 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:29:25.194 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:31:25.193 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:33:25.183 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:33:57.712 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:35:25.189 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:36:46.408 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:37:25.189 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:39:25.185 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:41:25.216 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:43:25.215 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:45:25.214 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:46:40.853 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:47:25.219 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:49:25.225 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:51:07.692 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:51:25.188 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:51:32.427 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:51:43.423 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:52:01.193 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:53:10.311 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:53:15.826 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:54:13.155 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:55:25.181 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:57:25.192 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 12:59:25.195 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 13:01:25.177 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 13:03:25.184 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 13:05:25.191 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 13:05:49.222 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 13:07:00.618 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 13:07:04.229 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 13:07:14.386 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 13:07:25.191 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 13:08:39.840 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 13:10:19.841 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 13:10:29.623 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 13:10:33.268 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 13:10:53.164 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 13:11:25.183 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 13:11:31.616 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 13:11:55.839 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 13:12:08.480 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 13:13:25.191 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 13:13:46.667 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 13:14:33.618 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
+[I 13:15:25.186 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
