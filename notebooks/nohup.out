@@ -1,0 +1,81 @@
+[I 17:00:11.401 NotebookApp] Serving notebooks from local directory: /home/antpc/Desktop/portfolio_projects/age_prediction/notebooks
+[I 17:00:11.401 NotebookApp] Jupyter Notebook 6.4.12 is running at:
+[I 17:00:11.401 NotebookApp] http://localhost:8888/?token=234adb0585621e26024732b5edb9badf658f16c105757430
+[I 17:00:11.401 NotebookApp]  or http://127.0.0.1:8888/?token=234adb0585621e26024732b5edb9badf658f16c105757430
+[I 17:00:11.401 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 17:00:11.422 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/antpc/.local/share/jupyter/runtime/nbserver-85625-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=234adb0585621e26024732b5edb9badf658f16c105757430
+     or http://127.0.0.1:8888/?token=234adb0585621e26024732b5edb9badf658f16c105757430
+[I 17:00:15.292 NotebookApp] Creating new notebook in 
+[W 17:00:15.984 NotebookApp] 404 GET /nbextensions/pydeck/extension.js?v=20220901170011 (127.0.0.1) 5.340000ms referer=http://localhost:8888/notebooks/Untitled.ipynb?kernel_name=python3
+[I 17:00:15.988 NotebookApp] Kernel started: c652a43f-a5eb-4822-ae58-39d646fcdcd9, name: python3
+[W 17:00:15.997 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20220901170011 (127.0.0.1) 0.890000ms referer=http://localhost:8888/notebooks/Untitled.ipynb?kernel_name=python3
+[I 17:02:15.979 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:03:48.479 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:04:15.976 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:05:03.555 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:05:10.255 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:06:15.982 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:08:15.988 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:09:01.562 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:10:15.983 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:11:00.106 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:11:19.691 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:12:15.990 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:14:15.980 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:14:27.152 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:16:15.985 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:17:28.476 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:18:15.990 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:20:09.421 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:20:15.986 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:21:12.043 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:22:15.988 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:24:15.987 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:26:15.989 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:28:15.988 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:29:21.542 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:30:15.988 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:32:15.990 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:34:15.992 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:34:39.538 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:36:08.499 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:36:15.998 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:37:09.575 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:37:28.789 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:37:30.999 NotebookApp] Kernel interrupted: c652a43f-a5eb-4822-ae58-39d646fcdcd9
+[I 17:37:33.234 NotebookApp] Starting buffering for c652a43f-a5eb-4822-ae58-39d646fcdcd9:8c3b1c6813c240788ab5e113609a98a3
+[I 17:37:34.573 NotebookApp] Kernel restarted: c652a43f-a5eb-4822-ae58-39d646fcdcd9
+[I 17:37:34.580 NotebookApp] Restoring connection for c652a43f-a5eb-4822-ae58-39d646fcdcd9:8c3b1c6813c240788ab5e113609a98a3
+[I 17:37:35.085 NotebookApp] Replaying 3 buffered messages
+[I 17:38:16.006 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:39:22.162 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:40:16.008 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:42:05.299 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:42:16.010 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:44:16.000 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:46:15.999 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:48:16.009 NotebookApp] Saving file at /age_prediction.ipynb
+[I 17:54:16.038 NotebookApp] Saving file at /age_prediction.ipynb
+[I 18:12:16.051 NotebookApp] Saving file at /age_prediction.ipynb
+[I 18:13:47.914 NotebookApp] Saving file at /age_prediction.ipynb
+[I 18:14:16.045 NotebookApp] Saving file at /age_prediction.ipynb
+[I 18:14:43.999 NotebookApp] Saving file at /age_prediction.ipynb
+[I 18:16:16.056 NotebookApp] Saving file at /age_prediction.ipynb
+[I 18:26:16.058 NotebookApp] Saving file at /age_prediction.ipynb
+[I 18:28:16.056 NotebookApp] Saving file at /age_prediction.ipynb
+[I 18:30:16.067 NotebookApp] Saving file at /age_prediction.ipynb
+[I 18:31:47.113 NotebookApp] Saving file at /age_prediction.ipynb
+[I 18:31:50.425 NotebookApp] Saving file at /age_prediction.ipynb
+[I 18:32:16.056 NotebookApp] Saving file at /age_prediction.ipynb
+[I 18:34:16.064 NotebookApp] Saving file at /age_prediction.ipynb
+[I 18:36:38.174 NotebookApp] Saving file at /age_prediction.ipynb
+[I 18:36:43.483 NotebookApp] Saving file at /age_prediction.ipynb
+[I 18:37:21.018 NotebookApp] Saving file at /age_prediction.ipynb
+[I 18:37:42.844 NotebookApp] Saving file at /age_prediction.ipynb
+[I 18:38:39.533 NotebookApp] Saving file at /age_prediction.ipynb
+[I 20:23:58.302 NotebookApp] Starting buffering for c652a43f-a5eb-4822-ae58-39d646fcdcd9:8c3b1c6813c240788ab5e113609a98a3
