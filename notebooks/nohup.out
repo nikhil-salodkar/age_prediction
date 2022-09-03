@@ -1,673 +1,0 @@
-[I 11:41:17.899 NotebookApp] Serving notebooks from local directory: /home/antpc/Desktop/portfolio_projects/age_prediction/notebooks
-[I 11:41:17.899 NotebookApp] Jupyter Notebook 6.4.12 is running at:
-[I 11:41:17.899 NotebookApp] http://localhost:8888/?token=3388bf760e16d85ee161f4b2d0a293e7548995703188f652
-[I 11:41:17.899 NotebookApp]  or http://127.0.0.1:8888/?token=3388bf760e16d85ee161f4b2d0a293e7548995703188f652
-[I 11:41:17.899 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[C 11:41:17.922 NotebookApp] 
-    
-    To access the notebook, open this file in a browser:
-        file:///home/antpc/.local/share/jupyter/runtime/nbserver-18529-open.html
-    Or copy and paste one of these URLs:
-        http://localhost:8888/?token=3388bf760e16d85ee161f4b2d0a293e7548995703188f652
-     or http://127.0.0.1:8888/?token=3388bf760e16d85ee161f4b2d0a293e7548995703188f652
-[I 11:41:24.442 NotebookApp] Creating new notebook in 
-[W 11:41:25.148 NotebookApp] 404 GET /nbextensions/pydeck/extension.js?v=20220902114117 (127.0.0.1) 5.660000ms referer=http://localhost:8888/notebooks/Untitled.ipynb?kernel_name=python3
-[I 11:41:25.152 NotebookApp] Kernel started: 95429652-562c-4437-a8d6-74e9f75c2a1d, name: python3
-[W 11:41:25.156 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20220902114117 (127.0.0.1) 1.210000ms referer=http://localhost:8888/notebooks/Untitled.ipynb?kernel_name=python3
-[I 11:42:43.000 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 11:43:25.136 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 11:44:17.516 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 11:45:25.150 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 11:47:25.138 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 11:49:25.141 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 11:50:35.794 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 11:51:25.135 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 11:51:40.213 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 11:52:34.326 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 11:53:04.644 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 11:53:25.138 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 11:55:25.147 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 11:57:13.050 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 11:57:25.147 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 11:59:25.144 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:01:23.968 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:02:39.307 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:02:47.587 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:03:17.266 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:03:23.317 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:04:01.913 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:05:25.206 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:07:25.171 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:09:25.178 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:10:04.348 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:11:25.184 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:13:25.188 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:14:30.958 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:14:34.443 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:14:44.281 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:15:25.179 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:17:25.183 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:19:25.178 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:21:25.194 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:23:25.188 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:24:11.239 NotebookApp] Starting buffering for 95429652-562c-4437-a8d6-74e9f75c2a1d:1dc0e55ec5a8423886dc78e1492a016f
-[I 12:24:12.582 NotebookApp] Kernel restarted: 95429652-562c-4437-a8d6-74e9f75c2a1d
-[I 12:24:12.588 NotebookApp] Restoring connection for 95429652-562c-4437-a8d6-74e9f75c2a1d:1dc0e55ec5a8423886dc78e1492a016f
-[I 12:24:13.100 NotebookApp] Replaying 3 buffered messages
-[I 12:25:25.176 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:26:50.244 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:27:25.174 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:29:25.194 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:31:25.193 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:33:25.183 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:33:57.712 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:35:25.189 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:36:46.408 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:37:25.189 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:39:25.185 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:41:25.216 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:43:25.215 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:45:25.214 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:46:40.853 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:47:25.219 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:49:25.225 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:51:07.692 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:51:25.188 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:51:32.427 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:51:43.423 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:52:01.193 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:53:10.311 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:53:15.826 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:54:13.155 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:55:25.181 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:57:25.192 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 12:59:25.195 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 13:01:25.177 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 13:03:25.184 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 13:05:25.191 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 13:05:49.222 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 13:07:00.618 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 13:07:04.229 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 13:07:14.386 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 13:07:25.191 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 13:08:39.840 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 13:10:19.841 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 13:10:29.623 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 13:10:33.268 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 13:10:53.164 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 13:11:25.183 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 13:11:31.616 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 13:11:55.839 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 13:12:08.480 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 13:13:25.191 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 13:13:46.667 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 13:14:33.618 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 13:15:25.186 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[W 15:09:58.530 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[W 15:09:58.545 NotebookApp] 404 GET /nbextensions/pydeck/extension.js?v=20220902114117 (127.0.0.1) 1.150000ms referer=http://localhost:8888/notebooks/age_prediction.ipynb
-[W 15:09:58.565 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20220902114117 (127.0.0.1) 1.120000ms referer=http://localhost:8888/notebooks/age_prediction.ipynb
-[I 15:09:59.382 NotebookApp] Kernel started: 0dc03ee3-ffee-4023-a5be-aacc1ef339e6, name: python3
-[I 15:11:25.229 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:11:59.403 NotebookApp] Saving file at /age_prediction.ipynb
-[W 15:11:59.404 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 15:15:42.859 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:17:25.237 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:19:25.223 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:21:25.228 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:23:25.238 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:23:41.772 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:23:50.369 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:25:25.230 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:27:25.235 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:28:06.147 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:28:41.256 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:29:45.656 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:30:03.470 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:31:25.647 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:31:59.984 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:33:25.649 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:35:25.704 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:37:25.682 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:41:25.508 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:41:38.572 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:47:25.514 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:47:55.354 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:48:08.831 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:48:55.373 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:48:58.713 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:49:25.654 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:50:22.687 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:50:31.274 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:51:25.666 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:52:04.138 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:53:25.651 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:55:01.727 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:55:46.637 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:56:32.250 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:57:25.430 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:57:25.717 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 15:57:59.429 NotebookApp] Saving file at /age_prediction.ipynb
-[W 15:57:59.429 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 15:59:04.780 NotebookApp] Saving file at /age_prediction.ipynb
-[W 15:59:04.780 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 15:59:59.424 NotebookApp] Saving file at /age_prediction.ipynb
-[W 15:59:59.425 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:00:39.876 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:00:39.876 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:02:12.306 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:02:12.306 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:03:59.432 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:03:59.432 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:05:25.641 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 16:05:59.427 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:05:59.427 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:07:25.641 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[I 16:07:59.427 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:07:59.427 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:09:16.911 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:09:16.912 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:09:59.429 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:09:59.429 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:11:01.330 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:11:01.330 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:11:20.140 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:11:20.141 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:11:26.965 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:11:26.965 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:11:59.424 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:11:59.424 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:13:59.438 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:13:59.438 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:15:59.434 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:15:59.435 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:17:59.432 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:17:59.432 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:19:59.435 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:19:59.436 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:22:03.903 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:22:03.904 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:22:55.264 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:22:55.265 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:23:59.438 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:23:59.439 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:29:59.431 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:29:59.432 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:37:09.640 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:37:09.640 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:37:21.835 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:37:21.835 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:37:33.996 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:37:33.996 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:37:38.310 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:37:38.310 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:37:59.432 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:37:59.433 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:38:25.723 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:38:25.723 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:38:33.907 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:38:33.907 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:38:56.993 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:38:56.993 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:39:59.457 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:39:59.457 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:41:55.931 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:41:55.931 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:41:59.444 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:41:59.444 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:43:59.451 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:43:59.452 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:45:59.453 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:45:59.453 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:54:57.981 NotebookApp] Serving notebooks from local directory: /home/antpc/Desktop/portfolio_projects/age_prediction/notebooks
-[I 16:54:57.981 NotebookApp] Jupyter Notebook 6.4.12 is running at:
-[I 16:54:57.981 NotebookApp] http://localhost:8888/?token=49b75910cca4dd924a7e5e6d45607190575602a610536706
-[I 16:54:57.981 NotebookApp]  or http://127.0.0.1:8888/?token=49b75910cca4dd924a7e5e6d45607190575602a610536706
-[I 16:54:57.982 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[C 16:54:57.996 NotebookApp] 
-    
-    To access the notebook, open this file in a browser:
-        file:///home/antpc/.local/share/jupyter/runtime/nbserver-4026-open.html
-    Or copy and paste one of these URLs:
-        http://localhost:8888/?token=49b75910cca4dd924a7e5e6d45607190575602a610536706
-     or http://127.0.0.1:8888/?token=49b75910cca4dd924a7e5e6d45607190575602a610536706
-[W 16:55:06.659 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[W 16:55:06.680 NotebookApp] 404 GET /nbextensions/pydeck/extension.js?v=20220902165457 (127.0.0.1) 5.550000ms referer=http://localhost:8888/notebooks/age_prediction.ipynb
-[W 16:55:07.557 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20220902165457 (127.0.0.1) 1.470000ms referer=http://localhost:8888/notebooks/age_prediction.ipynb
-[I 16:55:07.566 NotebookApp] Kernel started: 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece, name: python3
-[I 16:56:23.043 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:56:23.044 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:57:07.581 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:57:07.581 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:57:18.399 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:57:18.400 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:57:59.621 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:57:59.622 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:58:25.833 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:58:25.834 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:58:34.373 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:58:34.374 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:58:38.638 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:58:38.639 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:59:07.573 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:59:07.573 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:59:17.566 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:59:17.566 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:59:25.994 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:59:25.994 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:59:29.608 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:59:29.608 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:59:40.997 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:59:40.998 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 16:59:58.891 NotebookApp] Saving file at /age_prediction.ipynb
-[W 16:59:58.891 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:00:04.050 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:00:04.051 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:00:06.738 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:00:06.738 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:00:12.564 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:00:12.564 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:00:50.989 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:00:50.990 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:01:07.582 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:01:07.583 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:01:54.554 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:01:54.555 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:03:07.584 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:03:07.584 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:04:40.130 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:04:40.131 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:05:06.160 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:05:06.161 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:07:07.594 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:07:07.595 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:09:07.583 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:09:07.584 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:11:07.590 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:11:07.590 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:13:07.589 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:13:07.589 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:13:50.918 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:13:50.918 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:15:07.585 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:15:07.585 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:17:07.596 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:17:07.597 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:17:55.577 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:17:55.577 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:19:07.582 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:19:07.583 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:20:07.288 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:20:07.289 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:21:03.221 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:21:03.221 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:21:12.335 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:21:12.335 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:21:29.303 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:21:29.304 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:21:57.837 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:21:57.837 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:22:06.399 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:22:06.399 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:22:18.752 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:22:18.752 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:23:01.869 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:23:01.869 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:23:07.581 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:23:07.581 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:25:07.600 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:25:07.601 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:25:11.007 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:25:11.007 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:25:16.466 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:25:16.466 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:25:23.725 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:25:23.726 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:25:35.720 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:25:35.721 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:25:44.866 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:25:44.867 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:26:32.177 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:26:32.177 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:26:44.586 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:26:44.587 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:33:07.614 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:33:07.615 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:33:30.320 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:33:30.320 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:34:09.092 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:34:09.093 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:34:15.599 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:34:15.600 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:34:15.692 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:34:15.693 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:34:22.936 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:34:22.937 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 17:34:30.531 NotebookApp] Saving file at /age_prediction.ipynb
-[W 17:34:30.531 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 18:09:01.070 NotebookApp] Saving file at /age_prediction.ipynb
-[W 18:09:01.070 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 18:09:07.825 NotebookApp] Saving file at /age_prediction.ipynb
-[W 18:09:07.825 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 18:11:07.621 NotebookApp] Saving file at /age_prediction.ipynb
-[W 18:11:07.622 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 18:11:26.316 NotebookApp] Saving file at /age_prediction.ipynb
-[W 18:11:26.317 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 18:11:28.839 NotebookApp] Saving file at /age_prediction.ipynb
-[W 18:11:28.840 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 18:11:34.372 NotebookApp] Saving file at /age_prediction.ipynb
-[W 18:11:34.372 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 18:13:07.614 NotebookApp] Saving file at /age_prediction.ipynb
-[W 18:13:07.615 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 18:13:24.244 NotebookApp] Saving file at /age_prediction.ipynb
-[W 18:13:24.244 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 18:13:31.348 NotebookApp] Saving file at /age_prediction.ipynb
-[W 18:13:31.348 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 18:13:43.949 NotebookApp] Saving file at /age_prediction.ipynb
-[W 18:13:43.949 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 18:13:50.713 NotebookApp] Saving file at /age_prediction.ipynb
-[W 18:13:50.714 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 18:13:58.786 NotebookApp] Saving file at /age_prediction.ipynb
-[W 18:13:58.786 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 18:15:07.591 NotebookApp] Saving file at /age_prediction.ipynb
-[W 18:15:07.591 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 18:17:07.604 NotebookApp] Saving file at /age_prediction.ipynb
-[W 18:17:07.604 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 18:17:45.157 NotebookApp] Saving file at /age_prediction.ipynb
-[W 18:17:45.158 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 18:19:07.613 NotebookApp] Saving file at /age_prediction.ipynb
-[W 18:19:07.613 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 18:19:38.499 NotebookApp] Saving file at /age_prediction.ipynb
-[W 18:19:38.499 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 18:19:43.645 NotebookApp] Saving file at /age_prediction.ipynb
-[W 18:19:43.646 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 18:20:07.205 NotebookApp] Saving file at /age_prediction.ipynb
-[W 18:20:07.206 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 18:20:14.342 NotebookApp] Saving file at /age_prediction.ipynb
-[W 18:20:14.342 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 18:20:39.338 NotebookApp] Saving file at /age_prediction.ipynb
-[W 18:20:39.339 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 18:21:00.856 NotebookApp] Saving file at /age_prediction.ipynb
-[W 18:21:00.857 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 18:21:05.100 NotebookApp] Saving file at /age_prediction.ipynb
-[W 18:21:05.100 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 18:21:11.255 NotebookApp] Saving file at /age_prediction.ipynb
-[W 18:21:11.256 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 18:21:15.883 NotebookApp] Saving file at /age_prediction.ipynb
-[W 18:21:15.884 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 18:21:21.540 NotebookApp] Saving file at /age_prediction.ipynb
-[W 18:21:21.541 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 18:21:53.411 NotebookApp] Saving file at /age_prediction.ipynb
-[W 18:21:53.412 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 18:22:07.495 NotebookApp] Saving file at /age_prediction.ipynb
-[W 18:22:07.496 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 18:22:12.746 NotebookApp] Saving file at /age_prediction.ipynb
-[W 18:22:12.747 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 18:22:49.624 NotebookApp] Saving file at /age_prediction.ipynb
-[W 18:22:49.625 NotebookApp] Notebook age_prediction.ipynb is not trusted
-[I 18:23:07.609 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:23:38.587 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:23:42.470 NotebookApp] Starting buffering for 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece:efa369403bac4d9e84a7eea2cde9710b
-[I 18:23:44.010 NotebookApp] Kernel restarted: 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece
-[I 18:23:44.017 NotebookApp] Restoring connection for 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece:efa369403bac4d9e84a7eea2cde9710b
-[I 18:23:44.464 NotebookApp] Replaying 3 buffered messages
-[I 18:24:49.717 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:25:07.609 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:25:12.085 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:25:32.774 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:26:05.663 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:26:11.396 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:26:16.198 NotebookApp] Starting buffering for 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece:efa369403bac4d9e84a7eea2cde9710b
-wandb: Waiting for W&B process to finish... (success).
-wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: - 0.001 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: | 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: / 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: - 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: \ 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: | 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: / 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: - 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: \ 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)[I 18:26:19.132 NotebookApp] Kernel restarted: 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece
-[I 18:26:19.138 NotebookApp] Restoring connection for 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece:efa369403bac4d9e84a7eea2cde9710b
-[I 18:26:19.635 NotebookApp] Replaying 10 buffered messages
-[I 18:27:07.615 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:27:23.190 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:28:02.348 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:28:22.723 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:28:25.234 NotebookApp] Starting buffering for 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece:efa369403bac4d9e84a7eea2cde9710b
-wandb: Waiting for W&B process to finish... (success).
-wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: - 0.001 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: \ 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: | 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: / 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: - 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: \ 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: | 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: / 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: - 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: \ 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)[I 18:28:28.170 NotebookApp] Kernel restarted: 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece
-[I 18:28:28.176 NotebookApp] Restoring connection for 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece:efa369403bac4d9e84a7eea2cde9710b
-[I 18:28:28.629 NotebookApp] Replaying 10 buffered messages
-[I 18:29:07.613 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:29:21.356 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:29:23.793 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:29:32.139 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:29:36.031 NotebookApp] Starting buffering for 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece:efa369403bac4d9e84a7eea2cde9710b
-wandb: Waiting for W&B process to finish... (success).
-wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: - 0.001 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: \ 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: | 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: / 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: - 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: \ 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: | 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: / 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)[I 18:29:38.968 NotebookApp] Kernel restarted: 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece
-[I 18:29:38.975 NotebookApp] Restoring connection for 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece:efa369403bac4d9e84a7eea2cde9710b
-[I 18:29:39.484 NotebookApp] Replaying 10 buffered messages
-[I 18:30:39.591 NotebookApp] Starting buffering for 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece:efa369403bac4d9e84a7eea2cde9710b
-wandb: Waiting for W&B process to finish... (success).
-wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: - 0.001 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: | 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: / 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: - 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: \ 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: | 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: / 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: - 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)[I 18:30:42.727 NotebookApp] Kernel restarted: 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece
-[I 18:30:42.733 NotebookApp] Restoring connection for 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece:efa369403bac4d9e84a7eea2cde9710b
-[I 18:30:43.188 NotebookApp] Replaying 10 buffered messages
-[I 18:31:07.599 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:31:16.366 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:31:23.684 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:33:07.608 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:33:41.898 NotebookApp] Starting buffering for 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece:efa369403bac4d9e84a7eea2cde9710b
-wandb: Waiting for W&B process to finish... (success).
-wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
-wandb: \ 0.001 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.014 MB uploaded (0.000 MB deduped)Exception in thread Thread-21:
-Traceback (most recent call last):
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/apis/normalize.py", line 25, in wrapper
-    return func(*args, **kwargs)
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 1482, in upload_urls
-Exception in thread Thread-22:
-Traceback (most recent call last):
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/apis/normalize.py", line 25, in wrapper
-    raise CommError(f"Run does not exist {entity}/{project}/{run_id}.")
-wandb.errors.CommError: Run does not exist nikhilsalodkar/UTK_Age_Prediction/1dxnvm23.
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/threading.py", line 932, in _bootstrap_inner
-    return func(*args, **kwargs)
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 1482, in upload_urls
-    raise CommError(f"Run does not exist {entity}/{project}/{run_id}.")
-wandb.errors.CommError: Run does not exist nikhilsalodkar/UTK_Age_Prediction/1dxnvm23.
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/threading.py", line 932, in _bootstrap_inner
-    self.run()
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/filesync/upload_job.py", line 62, in run
-    self.run()
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/filesync/upload_job.py", line 62, in run
-    success = self.push()
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/filesync/upload_job.py", line 113, in push
-Exception in thread Thread-23:
-Traceback (most recent call last):
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/apis/normalize.py", line 25, in wrapper
-    return func(*args, **kwargs)
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 1482, in upload_urls
-    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/apis/normalize.py", line 61, in wrapper
-wandb: - 0.001 MB of 0.014 MB uploaded (0.000 MB deduped)    raise CommError(f"Run does not exist {entity}/{project}/{run_id}.")
-wandb.errors.CommError: Run does not exist nikhilsalodkar/UTK_Age_Prediction/1dxnvm23.
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/threading.py", line 932, in _bootstrap_inner
-    success = self.push()
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/filesync/upload_job.py", line 113, in push
-    raise CommError(message, err).with_traceback(sys.exc_info()[2])
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/apis/normalize.py", line 25, in wrapper
-Exception in thread Thread-20:
-Traceback (most recent call last):
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/apis/normalize.py", line 25, in wrapper
-    return func(*args, **kwargs)
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 1482, in upload_urls
-    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/apis/normalize.py", line 61, in wrapper
-    raise CommError(f"Run does not exist {entity}/{project}/{run_id}.")
-wandb.errors.CommError: Run does not exist nikhilsalodkar/UTK_Age_Prediction/1dxnvm23.
-    self.run()
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/filesync/upload_job.py", line 62, in run
-    return func(*args, **kwargs)
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 1482, in upload_urls
-    raise CommError(message, err).with_traceback(sys.exc_info()[2])
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/apis/normalize.py", line 25, in wrapper
-    raise CommError(f"Run does not exist {entity}/{project}/{run_id}.")
-wandb.errors.CommError: Run does not exist nikhilsalodkar/UTK_Age_Prediction/1dxnvm23.
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/threading.py", line 932, in _bootstrap_inner
-    return func(*args, **kwargs)
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 1482, in upload_urls
-Exception in thread Thread-24:
-Traceback (most recent call last):
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/apis/normalize.py", line 25, in wrapper
-    self.run()
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/filesync/upload_job.py", line 62, in run
-    success = self.push()
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/filesync/upload_job.py", line 113, in push
-    success = self.push()
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/filesync/upload_job.py", line 113, in push
-    return func(*args, **kwargs)
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 1482, in upload_urls
-    raise CommError(f"Run does not exist {entity}/{project}/{run_id}.")
-wandb.errors.CommError: Run does not exist nikhilsalodkar/UTK_Age_Prediction/1dxnvm23.
-    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/apis/normalize.py", line 61, in wrapper
-    raise CommError(f"Run does not exist {entity}/{project}/{run_id}.")
-wandb.errors.CommError: Run does not exist nikhilsalodkar/UTK_Age_Prediction/1dxnvm23.
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/threading.py", line 932, in _bootstrap_inner
-    raise CommError(message, err).with_traceback(sys.exc_info()[2])
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/apis/normalize.py", line 25, in wrapper
-    return func(*args, **kwargs)
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 1482, in upload_urls
-    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/apis/normalize.py", line 61, in wrapper
-    raise CommError(message, err).with_traceback(sys.exc_info()[2])
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/apis/normalize.py", line 25, in wrapper
-    return func(*args, **kwargs)
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 1482, in upload_urls
-    raise CommError(f"Run does not exist {entity}/{project}/{run_id}.")
-wandb.errors.CommError: Run does not exist nikhilsalodkar/UTK_Age_Prediction/1dxnvm23.
-    self.run()
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/filesync/upload_job.py", line 62, in run
-    raise CommError(f"Run does not exist {entity}/{project}/{run_id}.")
-wandb.errors.CommError: Run does not exist nikhilsalodkar/UTK_Age_Prediction/1dxnvm23.
-    success = self.push()
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/filesync/upload_job.py", line 113, in push
-    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/apis/normalize.py", line 61, in wrapper
-    raise CommError(message, err).with_traceback(sys.exc_info()[2])
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/apis/normalize.py", line 25, in wrapper
-    return func(*args, **kwargs)
-  File "/home/antpc/anaconda3/envs/personal_projects/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 1482, in upload_urls
-    raise CommError(f"Run does not exist {entity}/{project}/{run_id}.")
-wandb.errors.CommError: Run does not exist nikhilsalodkar/UTK_Age_Prediction/1dxnvm23.
-wandb: \ 0.001 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
-wandb: / 0.001 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: - 0.001 MB of 0.014 MB uploaded (0.000 MB deduped)wandb:                                                                                
-wandb: Synced resnet101_first_model: https://wandb.ai/nikhilsalodkar/UTK_Age_Prediction/runs/1dxnvm23
-wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
-wandb: Find logs at: lightning_logs/wandb/run-20220902_183105-1dxnvm23/logs
-[I 18:33:45.032 NotebookApp] Kernel restarted: 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece
-[I 18:33:45.039 NotebookApp] Restoring connection for 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece:efa369403bac4d9e84a7eea2cde9710b
-[I 18:33:45.523 NotebookApp] Replaying 11 buffered messages
-[I 18:35:07.607 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:35:11.918 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:37:07.602 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:37:09.487 NotebookApp] Kernel interrupted: 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece
-[I 18:39:07.605 NotebookApp] Saving file at /age_prediction.ipynb
-[W 18:39:16.580 NotebookApp] Notebook UTKFace_and_wild_dataset_prep.ipynb is not trusted
-[W 18:39:16.638 NotebookApp] 404 GET /nbextensions/pydeck/extension.js?v=20220902165457 (127.0.0.1) 1.170000ms referer=http://localhost:8888/notebooks/UTKFace_and_wild_dataset_prep.ipynb
-[W 18:39:16.657 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20220902165457 (127.0.0.1) 1.670000ms referer=http://localhost:8888/notebooks/UTKFace_and_wild_dataset_prep.ipynb
-[I 18:39:17.943 NotebookApp] Kernel started: f5bbb03d-478e-4999-b76d-63c1d9e84a86, name: python3
-[I 18:41:18.116 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[W 18:41:18.117 NotebookApp] Notebook UTKFace_and_wild_dataset_prep.ipynb is not trusted
-[I 18:43:18.096 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[W 18:43:18.097 NotebookApp] Notebook UTKFace_and_wild_dataset_prep.ipynb is not trusted
-[I 18:45:18.089 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[W 18:45:18.090 NotebookApp] Notebook UTKFace_and_wild_dataset_prep.ipynb is not trusted
-[I 18:47:18.098 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[W 18:47:18.098 NotebookApp] Notebook UTKFace_and_wild_dataset_prep.ipynb is not trusted
-[I 18:49:18.093 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[W 18:49:18.094 NotebookApp] Notebook UTKFace_and_wild_dataset_prep.ipynb is not trusted
-[I 18:51:18.102 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[W 18:51:18.103 NotebookApp] Notebook UTKFace_and_wild_dataset_prep.ipynb is not trusted
-[I 18:53:18.080 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[W 18:53:18.080 NotebookApp] Notebook UTKFace_and_wild_dataset_prep.ipynb is not trusted
-[I 18:54:37.153 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[W 18:54:37.154 NotebookApp] Notebook UTKFace_and_wild_dataset_prep.ipynb is not trusted
-[I 18:55:18.085 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[W 18:55:18.086 NotebookApp] Notebook UTKFace_and_wild_dataset_prep.ipynb is not trusted
-[I 18:55:45.553 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[W 18:55:45.554 NotebookApp] Notebook UTKFace_and_wild_dataset_prep.ipynb is not trusted
-[I 18:57:15.367 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[W 18:57:15.368 NotebookApp] Notebook UTKFace_and_wild_dataset_prep.ipynb is not trusted
-[I 18:57:18.093 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[W 18:57:18.094 NotebookApp] Notebook UTKFace_and_wild_dataset_prep.ipynb is not trusted
-[I 18:58:12.142 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[W 18:58:12.143 NotebookApp] Notebook UTKFace_and_wild_dataset_prep.ipynb is not trusted
-[I 18:58:26.636 NotebookApp] Saving file at /UTKFace_and_wild_dataset_prep.ipynb
-[W 18:58:26.637 NotebookApp] Notebook UTKFace_and_wild_dataset_prep.ipynb is not trusted
-[I 18:58:37.176 NotebookApp] Starting buffering for f5bbb03d-478e-4999-b76d-63c1d9e84a86:26467945d92c40248dcb564c2fcaffc7
-[I 18:58:40.929 NotebookApp] Kernel shutdown: f5bbb03d-478e-4999-b76d-63c1d9e84a86
-[I 18:58:46.675 NotebookApp] Starting buffering for 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece:efa369403bac4d9e84a7eea2cde9710b
-[I 18:58:47.512 NotebookApp] Kernel restarted: 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece
-[I 18:58:47.517 NotebookApp] Restoring connection for 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece:efa369403bac4d9e84a7eea2cde9710b
-[I 18:58:48.031 NotebookApp] Replaying 3 buffered messages
-[I 18:59:07.607 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:59:46.260 NotebookApp] Saving file at /age_prediction.ipynb
-[I 18:59:56.657 NotebookApp] Saving file at /age_prediction.ipynb
-[I 19:00:20.727 NotebookApp] Saving file at /age_prediction.ipynb
-[I 19:01:07.606 NotebookApp] Saving file at /age_prediction.ipynb
-[I 19:03:07.607 NotebookApp] Saving file at /age_prediction.ipynb
-[I 19:04:17.294 NotebookApp] Kernel interrupted: 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece
-[I 19:04:19.668 NotebookApp] Starting buffering for 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece:efa369403bac4d9e84a7eea2cde9710b
-wandb: Waiting for W&B process to finish... (success).
-wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.015 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.015 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.015 MB uploaded (0.000 MB deduped)wandb: - 0.001 MB of 0.015 MB uploaded (0.000 MB deduped)wandb: \ 0.015 MB of 0.015 MB uploaded (0.000 MB deduped)wandb: | 0.015 MB of 0.015 MB uploaded (0.000 MB deduped)wandb: / 0.015 MB of 0.015 MB uploaded (0.000 MB deduped)wandb: - 0.015 MB of 0.015 MB uploaded (0.000 MB deduped)wandb: \ 0.015 MB of 0.015 MB uploaded (0.000 MB deduped)wandb: | 0.015 MB of 0.015 MB uploaded (0.000 MB deduped)wandb: / 0.015 MB of 0.015 MB uploaded (0.000 MB deduped)wandb: - 0.015 MB of 0.015 MB uploaded (0.000 MB deduped)[I 19:04:22.907 NotebookApp] Kernel restarted: 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece
-[I 19:04:22.915 NotebookApp] Restoring connection for 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece:efa369403bac4d9e84a7eea2cde9710b
-[I 19:04:23.546 NotebookApp] Replaying 10 buffered messages
-[I 19:04:45.625 NotebookApp] Saving file at /age_prediction.ipynb
-[I 19:04:57.024 NotebookApp] Saving file at /age_prediction.ipynb
-[I 19:05:02.074 NotebookApp] Starting buffering for 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece:efa369403bac4d9e84a7eea2cde9710b
-[I 19:05:02.308 NotebookApp] Kernel restarted: 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece
-[I 19:05:02.315 NotebookApp] Restoring connection for 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece:efa369403bac4d9e84a7eea2cde9710b
-[I 19:05:02.855 NotebookApp] Replaying 3 buffered messages
-[I 19:05:22.596 NotebookApp] Saving file at /age_prediction.ipynb
-[I 19:05:24.701 NotebookApp] Saving file at /age_prediction.ipynb
-[I 19:06:54.183 NotebookApp] Saving file at /age_prediction.ipynb
-[I 19:07:31.597 NotebookApp] Saving file at /age_prediction.ipynb
-[I 19:07:47.449 NotebookApp] Starting buffering for 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece:efa369403bac4d9e84a7eea2cde9710b
-[I 19:07:47.582 NotebookApp] Kernel restarted: 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece
-[I 19:07:47.588 NotebookApp] Restoring connection for 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece:efa369403bac4d9e84a7eea2cde9710b
-[I 19:07:48.097 NotebookApp] Replaying 3 buffered messages
-[I 19:08:14.635 NotebookApp] Starting buffering for 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece:efa369403bac4d9e84a7eea2cde9710b
-[I 19:08:14.768 NotebookApp] Kernel restarted: 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece
-[I 19:08:14.775 NotebookApp] Restoring connection for 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece:efa369403bac4d9e84a7eea2cde9710b
-[I 19:08:15.224 NotebookApp] Replaying 3 buffered messages
-[I 19:09:00.485 NotebookApp] Saving file at /age_prediction.ipynb
-[I 19:09:00.577 NotebookApp] Saving file at /age_prediction.ipynb
-[I 19:09:07.616 NotebookApp] Saving file at /age_prediction.ipynb
-[I 19:09:49.753 NotebookApp] Saving file at /age_prediction.ipynb
-[I 19:11:07.607 NotebookApp] Saving file at /age_prediction.ipynb
-[I 19:13:12.548 NotebookApp] Saving file at /age_prediction.ipynb
-[I 19:13:12.639 NotebookApp] Saving file at /age_prediction.ipynb
-[I 19:13:15.503 NotebookApp] Saving file at /age_prediction.ipynb
-[I 19:13:17.927 NotebookApp] Starting buffering for 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece:efa369403bac4d9e84a7eea2cde9710b
-wandb: Waiting for W&B process to finish... (success).
-wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: - 0.001 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: | 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: / 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: - 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: \ 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: | 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: / 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)wandb: - 0.014 MB of 0.014 MB uploaded (0.000 MB deduped)[I 19:13:21.165 NotebookApp] Kernel restarted: 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece
-[I 19:13:21.171 NotebookApp] Restoring connection for 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece:efa369403bac4d9e84a7eea2cde9710b
-[I 19:13:22.179 NotebookApp] Replaying 10 buffered messages
-[I 19:13:57.928 NotebookApp] Starting buffering for 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece:efa369403bac4d9e84a7eea2cde9710b
-[I 19:13:58.157 NotebookApp] Kernel restarted: 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece
-[I 19:13:58.163 NotebookApp] Restoring connection for 38eaadd1-8d34-4a67-8c75-9fcdb0df2ece:efa369403bac4d9e84a7eea2cde9710b
-[I 19:13:58.589 NotebookApp] Replaying 3 buffered messages
-[I 19:14:33.817 NotebookApp] Saving file at /age_prediction.ipynb
-[I 19:14:55.212 NotebookApp] Saving file at /age_prediction.ipynb
