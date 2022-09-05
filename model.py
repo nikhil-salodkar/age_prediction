@@ -5,6 +5,7 @@ import torchvision
 from torch import nn
 
 import pytorch_lightning as pl
+from torch.optim.lr_scheduler import OneCycleLR
 from torchmetrics import Accuracy, F1Score, ConfusionMatrix
 from torchvision.transforms import Compose, Resize, ToTensor, Normalize
 
@@ -126,11 +127,11 @@ class AgePrediction(pl.LightningModule):
 
         total_acc = (age_acc + sex_acc + race_acc) / 3
 
-        self.log("val-total-loss", total_loss, on_step=False, on_epoch=True, prog_bar=True)
-        self.log('val-age-acc', age_acc, on_step=False, on_epoch=True, prog_bar=True)
-        self.log('val-sex-acc', sex_acc, on_step=False, on_epoch=True, prog_bar=True)
-        self.log('val-race-acc', race_acc, on_step=False, on_epoch=True, prog_bar=True)
-        self.log('val-total-acc', total_acc, on_step=False, on_epoch=True, prog_bar=True)
+        self.log("val-total-loss", total_loss, on_step=False, on_epoch=True, prog_bar=False)
+        self.log('val-age-acc', age_acc, on_step=False, on_epoch=True, prog_bar=False)
+        self.log('val-sex-acc', sex_acc, on_step=False, on_epoch=True, prog_bar=False)
+        self.log('val-race-acc', race_acc, on_step=False, on_epoch=True, prog_bar=False)
+        self.log('val-total-acc', total_acc, on_step=False, on_epoch=True, prog_bar=False)
 
         val_dict =  {
             'age_predict' : age_predict,
@@ -198,7 +199,13 @@ class AgePrediction(pl.LightningModule):
         return predictions.cpu().detach().numpy()
 
     def configure_optimizers(self):
-        return torch.optim.AdamW(self.parameters(), lr=0.00002)
+        optimizer = torch.optim.AdamW(self.parameters(), lr=5e-5)
+        scheduler = {
+                    'scheduler': OneCycleLR(optimizer, max_lr=7e-5, steps_per_epoch=304, pct_start=0.15, epochs=30,
+                               anneal_strategy='cos', div_factor=100),
+                    'interval': 'step'
+                }
+        return [optimizer], [scheduler]
 
 
 if __name__ == '__main__':
