@@ -49,8 +49,7 @@ class AgePredictionData(pl.LightningDataModule):
             ToTensor(),
             Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
         ])
-        self.transforms = Compose([Resize((256, 256)), ToTensor()])
-#                                    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])])
+        self.transforms = Compose([Resize((256, 256)), ToTensor(), Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])])
         self.train_batch = train_batch
         self.val_batch = train_batch * 4
 

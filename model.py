@@ -49,8 +49,12 @@ class AgePrediction(pl.LightningModule):
         self.model = AgePredictResnet()
         self.criterion = nn.CrossEntropyLoss()
         self.acc = Accuracy()
-        self.f1 = F1Score(num_classes=3, average='macro', mdmc_average='global')
-        self.confusion = ConfusionMatrix(num_classes=3)
+        self.age_f1 = F1Score(num_classes=9, average='macro', mdmc_average='global')
+        self.sex_f1 = F1Score(num_classes=2, average='macro', mdmc_average='global')
+        self.race_f1 = F1Score(num_classes=5, average='macro', mdmc_average='global')
+        self.age_confusion = ConfusionMatrix(num_classes=9)
+        self.sex_confusion = ConfusionMatrix(num_classes=2)
+        self.race_confusion = ConfusionMatrix(num_classes=5)
         self.softmax = nn.Softmax(dim=1)
 
     def forward(self, image, transforms):
@@ -88,13 +92,13 @@ class AgePrediction(pl.LightningModule):
 
         total_acc = (age_acc + sex_acc + race_acc) / 3
 
-        self.log("age-loss", age_loss, on_step=True, on_epoch=True, prog_bar=True)
-        self.log("sex-loss", sex_loss, on_step=True, on_epoch=True, prog_bar=True)
-        self.log("race-loss", race_loss, on_step=True, on_epoch=True, prog_bar=True)
+        self.log("age-loss", age_loss, on_step=True, on_epoch=True, prog_bar=False)
+        self.log("sex-loss", sex_loss, on_step=True, on_epoch=True, prog_bar=False)
+        self.log("race-loss", race_loss, on_step=True, on_epoch=True, prog_bar=False)
         self.log("total-loss", total_loss, on_step=True, on_epoch=True, prog_bar=True)
-        self.log('age-acc', age_acc, on_step=False, on_epoch=True, prog_bar=True)
-        self.log('sex-acc', sex_acc, on_step=False, on_epoch=True, prog_bar=True)
-        self.log('race-acc', race_acc, on_step=False, on_epoch=True, prog_bar=True)
+        self.log('age-acc', age_acc, on_step=False, on_epoch=True, prog_bar=False)
+        self.log('sex-acc', sex_acc, on_step=False, on_epoch=True, prog_bar=False)
+        self.log('race-acc', race_acc, on_step=False, on_epoch=True, prog_bar=False)
         self.log('total-train-acc', total_acc, on_step=False, on_epoch=True, prog_bar=True)
 
         return total_loss
@@ -128,19 +132,60 @@ class AgePrediction(pl.LightningModule):
         self.log('val-race-acc', race_acc, on_step=False, on_epoch=True, prog_bar=True)
         self.log('val-total-acc', total_acc, on_step=False, on_epoch=True, prog_bar=True)
 
+        val_dict =  {
+            'age_predict' : age_predict,
+            'age_targets' : age_targets,
+            'sex_predict': sex_predict,
+            'sex_targets': sex_targets,
+            'race_predict': race_predict,
+            'race_targets': race_targets
+        }
+
+        return val_dict
+
     def validation_epoch_end(self, validation_outputs):
-        preds, targets = zip(*validation_outputs)
-        all_preds = torch.stack(preds[0:-1]).view(-1)
-        all_targets = torch.stack(targets[0:-1]).view(-1)
+        age_preds, age_targets, sex_preds, sex_targets = [], [], [], []
+        race_preds, race_targets = [], []
+        for x in validation_outputs:
+            age_preds.append(x['age_predict'])
+            age_targets.append(x['age_targets'])
+            sex_preds.append(x['sex_predict'])
+            sex_targets.append(x['sex_targets'])
+            race_preds.append(x['race_predict'])
+            race_targets.append(x['race_targets'])
+        all_age_preds = torch.stack(age_preds[0:-1]).view(-1)
+        all_age_targets = torch.stack(age_targets[0:-1]).view(-1)
 
-        all_preds = torch.cat((all_preds, preds[-1:][0]))
-        all_targets = torch.cat((all_targets, targets[-1:][0]))
+        all_sex_preds = torch.stack(sex_preds[0:-1]).view(-1)
+        all_sex_targets = torch.stack(sex_targets[0:-1]).view(-1)
 
-        confusion_metric = self.confusion(all_preds, all_targets)
-        f1_score = self.f1(all_preds, all_targets)
-        self.log('val-f1score', f1_score)
+        all_race_preds = torch.stack(race_preds[0:-1]).view(-1)
+        all_race_targets = torch.stack(race_targets[0:-1]).view(-1)
 
-        print("confusion_metric: ", confusion_metric)
+        all_age_preds = torch.cat((all_age_preds, age_preds[-1:][0]))
+        all_age_targets = torch.cat((all_age_targets, age_targets[-1:][0]))
+
+        all_sex_preds = torch.cat((all_sex_preds, sex_preds[-1:][0]))
+        all_sex_targets = torch.cat((all_sex_targets, sex_targets[-1:][0]))
+
+        all_race_preds = torch.cat((all_race_preds, race_preds[-1:][0]))
+        all_race_targets = torch.cat((all_race_targets, race_targets[-1:][0]))
+
+        age_confusion_metric = self.age_confusion(all_age_preds, all_age_targets)
+        sex_confusion_metric = self.sex_confusion(all_sex_preds, all_sex_targets)
+        race_confusion_metric = self.race_confusion(all_race_preds, all_race_targets)
+
+        age_f1_score = self.age_f1(all_age_preds, all_age_targets)
+        sex_f1_score = self.sex_f1(all_sex_preds, all_sex_targets)
+        race_f1_score = self.race_f1(all_race_preds, all_race_targets)
+
+        self.log('age-f1score', age_f1_score)
+        self.log('sex-f1score', sex_f1_score)
+        self.log('race-f1score', race_f1_score)
+
+        print("age_confusion_metric: ", age_confusion_metric)
+        print("sex_confusion_metric: ", sex_confusion_metric)
+        print("race_confusion_metric: ", race_confusion_metric)
 
     def predict_step(self, input_batch, batch_idx):
         print("inside predict_step")
