@@ -45,9 +45,11 @@ class AgePredictResnet(nn.Module):
 
 
 class AgePrediction(pl.LightningModule):
-    def __init__(self):
+    def __init__(self, age_weights, race_weights):
         super().__init__()
         self.model = AgePredictResnet()
+        self.age_criterion = nn.CrossEntropyLoss(weight=age_weights)
+        self.race_criterion = nn.CrossEntropyLoss(weight=race_weights)
         self.criterion = nn.CrossEntropyLoss()
         self.acc = Accuracy()
         self.age_f1 = F1Score(num_classes=9, average='macro', mdmc_average='global')
@@ -78,9 +80,9 @@ class AgePrediction(pl.LightningModule):
         race_targets = input_batch[3]
 
         logits = self.model(image_tensors)
-        age_loss = self.criterion(logits[0], age_targets)
+        age_loss = self.age_criterion(logits[0], age_targets)
         sex_loss = self.criterion(logits[1], sex_targets)
-        race_loss = self.criterion(logits[2], race_targets)
+        race_loss = self.race_criterion(logits[2], race_targets)
 
         total_loss = age_loss + sex_loss + race_loss
 
@@ -112,9 +114,9 @@ class AgePrediction(pl.LightningModule):
 
         logits = self.model(image_tensors)
 
-        age_loss = self.criterion(logits[0], age_targets)
+        age_loss = self.age_criterion(logits[0], age_targets)
         sex_loss = self.criterion(logits[1], sex_targets)
-        race_loss = self.criterion(logits[2], race_targets)
+        race_loss = self.race_criterion(logits[2], race_targets)
 
         total_loss = age_loss + sex_loss + race_loss
 
