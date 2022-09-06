@@ -2,6 +2,8 @@ import os
 import streamlit as st
 from PIL import Image
 
+from inference import get_predictions
+
 st.title('Person characteristic prediction Demo')
 
 sample_files = os.listdir('./data/sample_images')
@@ -46,6 +48,6 @@ predict_clicked = st.button("Get prediction")
 if predict_clicked:
     which_button = st.session_state['which_button']
     if which_button == 'sample_button':
-        st.write('sample button is chosen')
+        predictions = get_predictions(sample_image)
     elif which_button == 'upload_button':
-        st.write('upload button is chosen')
+        predictions = get_predictions(img)

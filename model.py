@@ -45,12 +45,12 @@ class AgePredictResnet(nn.Module):
 
 
 class AgePrediction(pl.LightningModule):
-    def __init__(self, age_weights, race_weights):
+    def __init__(self, age_weights, sex_weights, race_weights):
         super().__init__()
         self.model = AgePredictResnet()
         self.age_criterion = nn.CrossEntropyLoss(weight=age_weights)
         self.race_criterion = nn.CrossEntropyLoss(weight=race_weights)
-        self.criterion = nn.CrossEntropyLoss()
+        self.sex_criterion = nn.CrossEntropyLoss(weight=sex_weights)
         self.acc = Accuracy()
         self.age_f1 = F1Score(num_classes=9, average='macro', mdmc_average='global')
         self.sex_f1 = F1Score(num_classes=2, average='macro', mdmc_average='global')
@@ -67,11 +67,19 @@ class AgePrediction(pl.LightningModule):
         print('the image dimensions are :', image.shape)
         self.model.eval()
         logits = self.model(image)
-        print("the logits are:", logits)
-        pred_probabilities = self.softmax(logits)
-        print("The probabilities : ", pred_probabilities)
-        prediction = torch.argmax(pred_probabilities, dim=1)
-        return prediction
+        print("the age logits are:", logits[0])
+        print("the sex logits are:", logits[1])
+        print("the race logits are:", logits[2])
+        age_prob = self.softmax(logits[0])
+        sex_prob = self.softmax(logits[1])
+        race_prob = self.softmax(logits[2])
+        print("Age probabilities : ", age_prob)
+        print("Sex probabilities : ", sex_prob)
+        print("race_probabilities : ", race_prob)
+        top2_age = torch.topk(age_prob, 2, dim=1)
+        sex = torch.argmax(sex_prob, dim=1)
+        top2_race = torch.topk(race_prob, 2, dim=1)
+        return
 
     def training_step(self, input_batch, batch_idx):
         image_tensors = input_batch[0]
@@ -81,7 +89,7 @@ class AgePrediction(pl.LightningModule):
 
         logits = self.model(image_tensors)
         age_loss = self.age_criterion(logits[0], age_targets)
-        sex_loss = self.criterion(logits[1], sex_targets)
+        sex_loss = self.sex_criterion(logits[1], sex_targets)
         race_loss = self.race_criterion(logits[2], race_targets)
 
         total_loss = age_loss + sex_loss + race_loss
@@ -115,7 +123,7 @@ class AgePrediction(pl.LightningModule):
         logits = self.model(image_tensors)
 
         age_loss = self.age_criterion(logits[0], age_targets)
-        sex_loss = self.criterion(logits[1], sex_targets)
+        sex_loss = self.sex_criterion(logits[1], sex_targets)
         race_loss = self.race_criterion(logits[2], race_targets)
 
         total_loss = age_loss + sex_loss + race_loss
@@ -127,13 +135,10 @@ class AgePrediction(pl.LightningModule):
         sex_acc = self.acc(sex_predict, sex_targets)
         race_acc = self.acc(race_predict, race_targets)
 
-        total_acc = (age_acc + sex_acc + race_acc) / 3
-
         self.log("val-total-loss", total_loss, on_step=False, on_epoch=True, prog_bar=False)
         self.log('val-age-acc', age_acc, on_step=False, on_epoch=True, prog_bar=False)
         self.log('val-sex-acc', sex_acc, on_step=False, on_epoch=True, prog_bar=False)
         self.log('val-race-acc', race_acc, on_step=False, on_epoch=True, prog_bar=False)
-        self.log('val-total-acc', total_acc, on_step=False, on_epoch=True, prog_bar=False)
 
         val_dict =  {
             'age_predict' : age_predict,
@@ -182,9 +187,12 @@ class AgePrediction(pl.LightningModule):
         sex_f1_score = self.sex_f1(all_sex_preds, all_sex_targets)
         race_f1_score = self.race_f1(all_race_preds, all_race_targets)
 
+        total_f1_score = (age_f1_score + sex_f1_score + race_f1_score)/3
+
         self.log('age-f1score', age_f1_score)
         self.log('sex-f1score', sex_f1_score)
         self.log('race-f1score', race_f1_score)
+        self.log('total-f1score', total_f1_score)
 
         print("age_confusion_metric: ", age_confusion_metric)
         print("sex_confusion_metric: ", sex_confusion_metric)
@@ -201,13 +209,14 @@ class AgePrediction(pl.LightningModule):
         return predictions.cpu().detach().numpy()
 
     def configure_optimizers(self):
-        optimizer = torch.optim.AdamW(self.parameters(), lr=5e-5)
-        scheduler = {
-                    'scheduler': OneCycleLR(optimizer, max_lr=7e-5, steps_per_epoch=304, pct_start=0.15, epochs=30,
-                               anneal_strategy='cos', div_factor=100),
-                    'interval': 'step'
-                }
-        return [optimizer], [scheduler]
+        optimizer = torch.optim.AdamW(self.parameters(), lr=2e-5)
+        return optimizer
+        # scheduler = {
+        #             'scheduler': OneCycleLR(optimizer, max_lr=7e-5, steps_per_epoch=304, pct_start=0.15, epochs=30,
+        #                        anneal_strategy='cos', div_factor=100),
+        #             'interval': 'step'
+        #         }
+        # return [optimizer], [scheduler]
 
 
 if __name__ == '__main__':
