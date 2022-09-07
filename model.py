@@ -61,25 +61,19 @@ class AgePrediction(pl.LightningModule):
         self.softmax = nn.Softmax(dim=1)
 
     def forward(self, image, transforms):
-        print("inside forward")
         image = transforms(image)
         image = torch.unsqueeze(image, 0)
-        print('the image dimensions are :', image.shape)
         self.model.eval()
-        logits = self.model(image)
-        print("the age logits are:", logits[0])
-        print("the sex logits are:", logits[1])
-        print("the race logits are:", logits[2])
+        with torch.inference_mode():
+            logits = self.model(image)
         age_prob = self.softmax(logits[0])
         sex_prob = self.softmax(logits[1])
         race_prob = self.softmax(logits[2])
-        print("Age probabilities : ", age_prob)
-        print("Sex probabilities : ", sex_prob)
-        print("race_probabilities : ", race_prob)
         top2_age = torch.topk(age_prob, 2, dim=1)
         sex = torch.argmax(sex_prob, dim=1)
         top2_race = torch.topk(race_prob, 2, dim=1)
-        return
+        return (list(top2_age.values.numpy().reshape(-1)), list(top2_age.indices.numpy().reshape(-1))), (sex.item(), sex_prob[0][sex.item()].item()), \
+               (list(top2_race.values.numpy().reshape(-1)), list(top2_race.indices.numpy().reshape(-1)))
 
     def training_step(self, input_batch, batch_idx):
         image_tensors = input_batch[0]
@@ -220,14 +214,14 @@ class AgePrediction(pl.LightningModule):
 
 
 if __name__ == '__main__':
-    trained_model_path = './lightning_logs/resnet101_64_low_lr_batch_normalized_updated_augmented_adamw/4fg9axib' \
-                         '/checkpoints/epoch=22-val-acc=0.828.ckpt'
-    model = AgePrediction.load_from_checkpoint(trained_model_path)
-    sample_image = Image.open('data/val/1ci33.jpg')
+    trained_model_path = './lightning_logs/resnet101_weighted_no_scheduling/17daip11/checkpoints/epoch=11-total-f1score=0.748.ckpt'
+    age_weight = torch.tensor([0.7704, 1.5936, 0.3426, 0.6154, 1.2710, 1.2029, 2.2643, 3.8366, 4.7582], dtype=torch.float32)
+    sex_weight = torch.tensor([0.9581, 1.0458], dtype=torch.float32)
+    race_weight = torch.tensor([0.4716, 1.0567, 1.3464, 1.1974, 2.8132], dtype=torch.float32)
+    model = AgePrediction.load_from_checkpoint(trained_model_path, age_weights=age_weight, sex_weights=sex_weight, race_weights=race_weight)
+    sample_image = Image.open('./data/wild_images/part1/50_0_0_20170103183532811.jpg')
     transforms = Compose([Resize((256, 256)), ToTensor(),
                           Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])])
 
-    # model.load_previous_trained_model(trained_model_path)
-
-    single_prediction = model(sample_image, transforms)
-    print(single_prediction)
+    predictions = model(sample_image, transforms)
+    print(predictions)
