@@ -17,14 +17,21 @@ if 'image_index' not in st.session_state:
 if 'which_button' not in st.session_state:
     st.session_state['which_button'] = 'sample_button'
 
-# upload_col, sample_col = st.columns(2)
-upload_col, sample_col = st.tabs(['Upload file', 'Select from sample images'])
+stream_col, upload_col, sample_col = st.tabs(['Take picture', 'Upload file', 'Select from sample images'])
+with stream_col:
+    picture = st.camera_input("Take a picture")
+    if picture is not None:
+        captured_img = Image.open(picture)
+        st.image(captured_img, caption='Captured Image')
+        use_captured_image = st.button('Use this captured image')
+        if use_captured_image is True:
+            st.session_state['which_button'] = 'captured_button'
 with upload_col:
     uploaded_file = st.file_uploader("Select a picture from your computer(png/jpg) :", type=['png', 'jpg', 'jpeg'])
     if uploaded_file is not None:
         img = Image.open(uploaded_file)
         st.image(img, caption='Uploaded Image')
-        use_uploaded_image = st.button("Use uploaded_image")
+        use_uploaded_image = st.button("Use uploaded image")
         if use_uploaded_image is True:
             st.session_state['which_button'] = 'upload_button'
 
@@ -47,7 +54,7 @@ with sample_col:
     sample_image = Image.open(os.path.join(sample_path, sample_files[current_index]))
     st.image(sample_image, caption='Chosen image')
 
-    use_sample_image = st.button("Use this sample")
+    use_sample_image = st.button("Use this Sample")
     if use_sample_image is True:
         st.session_state['which_button'] = 'sample_button'
 
@@ -58,5 +65,7 @@ if predict_clicked:
         predictions = get_predictions(sample_image)
     elif which_button == 'upload_button':
         predictions = get_predictions(img)
+    elif which_button  == 'captured_button':
+        predictions = get_predictions(captured_img)
     st.markdown('**The model predictions along with their probabilities are :**')
     st.table(predictions)

@@ -3,6 +3,9 @@ import numpy as np
 import pandas as pd
 import pytorch_lightning as pl
 import torch
+
+from sweep_configuration import sweep_config
+import wandb
 from pytorch_lightning.callbacks import ModelCheckpoint, EarlyStopping, LearningRateMonitor
 from pytorch_lightning.loggers import WandbLogger
 from sklearn.preprocessing import LabelEncoder
@@ -11,6 +14,22 @@ from sklearn.utils.class_weight import compute_class_weight
 from dataset import AgePredictionData
 from model import AgePrediction
 
+
+default_hparams = {
+    'layer1': 512,
+    'layer2': 256,
+    'layer3': 128,
+    'age_num_targets': 9,
+    'gender_num': 2,
+    'race_num': 5,
+    'activation': 'ReLU',
+    'batch_size': 64,
+    'lr': 2e-5,
+    'epochs': 30,
+    'dropout_val': 0.4,
+    'optimizer': 'adamw',
+    'path': './data/wild_images'
+}
 
 def get_data(data_path):
     df = pd.read_csv(os.path.join(data_path, 'full_wild_images_new.csv'))
@@ -34,20 +53,34 @@ def train_model(train_module, data_module):
     checkpoint_callback = ModelCheckpoint(filename='{epoch}-{total-f1score:.3f}', save_top_k=2, monitor='total-f1score'
                                           , mode='max')
     early_stopping = EarlyStopping(monitor="total-f1score", patience=5, verbose=False, mode="max")
-    lr_monitor = LearningRateMonitor(logging_interval='step')
-    wandb_logger = WandbLogger(project="UTK_Age_Prediction", save_dir='./lightning_logs',
-                               name="resnet101_weighted_no_scheduling")
+    # lr_monitor = LearningRateMonitor(logging_interval='step')
 
     trainer = pl.Trainer(accelerator='gpu', fast_dev_run=False, max_epochs=30,
                          callbacks=[checkpoint_callback, early_stopping], logger=wandb_logger, precision=16)
     trainer.fit(train_module, data_module)
 
 
-if __name__ == '__main__':
+def sweep_train():
+    # set up W&B logger
+    # wandb.init(name="resnet101_sweep1")
+    wandb_logger = WandbLogger(project="UTK_Age_Prediction", save_dir='./lightning_logs')
+    print("the config being used is :", wandb.config)
+
     pl.seed_everything(7)
-    path = './data/wild_images'
-    full_df = get_data(path)
-    age_weights, sex_weights, race_weights = compute_class_weights(full_df)
-    train_module = AgePrediction(age_weights, sex_weights, race_weights)
-    data_module = AgePredictionData(full_df, 64, path)
-    train_model(train_module, data_module)
+    full_df = get_data(wandb.config.path)
+    # age_weights, sex_weights, race_weights = compute_class_weights(full_df)
+
+    train_module = AgePrediction(wandb.config)
+    data_module = AgePredictionData(wandb.config, full_df)
+    checkpoint_callback = ModelCheckpoint(filename='{epoch}-{total-f1score:.3f}', save_top_k=2, monitor='total-f1score'
+                                          , mode='max')
+    early_stopping = EarlyStopping(monitor="total-f1score", patience=5, verbose=False, mode="max")
+    # lr_monitor = LearningRateMonitor(logging_interval='step')
+
+    trainer = pl.Trainer(accelerator='gpu', fast_dev_run=False, max_epochs=wandb.config.epochs,
+                         callbacks=[checkpoint_callback, early_stopping], logger=wandb_logger, precision=16)
+    trainer.fit(train_module, data_module)
+
+
+if __name__ == '__main__':
+    sweep_train()

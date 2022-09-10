@@ -11,22 +11,24 @@ from torchvision.transforms import Compose, Resize, ToTensor, Normalize
 
 
 class AgePredictResnet(nn.Module):
-    def __init__(self, age_num_targets=9, gender_num=2, race_num=5):
+    def __init__(self, hparams):
         super().__init__()
-
         self.model = torchvision.models.resnet101(pretrained=True)
-        self.model.fc = nn.Linear(2048, 512)
-        self.age_linear1 = nn.Linear(512, 256)
-        self.age_linear2 = nn.Linear(256, 128)
-        self.age_out = nn.Linear(128, age_num_targets)
-        self.gender_linear1 = nn.Linear(512, 256)
-        self.gender_linear2 = nn.Linear(256, 128)
-        self.gender_out = nn.Linear(128, gender_num)
-        self.race_linear1 = nn.Linear(512, 256)
-        self.race_linear2 = nn.Linear(256, 128)
-        self.race_out = nn.Linear(128, race_num)
-        self.activation = nn.ReLU()
-        self.dropout = nn.Dropout(0.4)
+        self.model.fc = nn.Linear(2048, hparams.layer1)
+        self.age_linear1 = nn.Linear(hparams.layer1, hparams.layer2)
+        self.age_linear2 = nn.Linear(hparams.layer2, hparams.layer3)
+        self.age_out = nn.Linear(hparams.layer3, hparams.age_num_targets)
+        self.gender_linear1 = nn.Linear(hparams.layer1, hparams.layer2)
+        self.gender_linear2 = nn.Linear(hparams.layer2, hparams.layer3)
+        self.gender_out = nn.Linear(hparams.layer3, hparams.gender_num)
+        self.race_linear1 = nn.Linear(hparams.layer1, hparams.layer2)
+        self.race_linear2 = nn.Linear(hparams.layer2, hparams.layer3)
+        self.race_out = nn.Linear(hparams.layer3, hparams.race_num)
+        if hparams.activation == 'ReLU':
+            self.activation = nn.ReLU()
+        elif hparams.activation == 'tanh':
+            self.activation = nn.Tanh()
+        self.dropout = nn.Dropout(hparams.dropout_val)
 
     def forward(self, x):
         out = self.activation(self.model(x))
@@ -45,19 +47,25 @@ class AgePredictResnet(nn.Module):
 
 
 class AgePrediction(pl.LightningModule):
-    def __init__(self, age_weights, sex_weights, race_weights):
+    def __init__(self, config):
         super().__init__()
-        self.model = AgePredictResnet()
+        # self.save_hyperparameters()
+        # self.save_hyperparameters(ignore=[age_weights, race_weights, sex_weights])
+        self.default_hparams = config
+        age_weights = torch.tensor([0.7704, 1.5936, 0.3426, 0.6154, 1.2710, 1.2029, 2.2643, 3.8366, 4.7582], dtype=torch.float32)
+        sex_weights = torch.tensor([0.9581, 1.0458], dtype=torch.float32)
+        race_weights = torch.tensor([0.4716, 1.0567, 1.3464, 1.1974, 2.8132], dtype=torch.float32)
+        self.model = AgePredictResnet(self.default_hparams)
         self.age_criterion = nn.CrossEntropyLoss(weight=age_weights)
         self.race_criterion = nn.CrossEntropyLoss(weight=race_weights)
         self.sex_criterion = nn.CrossEntropyLoss(weight=sex_weights)
         self.acc = Accuracy()
-        self.age_f1 = F1Score(num_classes=9, average='macro', mdmc_average='global')
-        self.sex_f1 = F1Score(num_classes=2, average='macro', mdmc_average='global')
-        self.race_f1 = F1Score(num_classes=5, average='macro', mdmc_average='global')
-        self.age_confusion = ConfusionMatrix(num_classes=9)
-        self.sex_confusion = ConfusionMatrix(num_classes=2)
-        self.race_confusion = ConfusionMatrix(num_classes=5)
+        self.age_f1 = F1Score(self.default_hparams.age_num_targets, average='macro', mdmc_average='global')
+        self.sex_f1 = F1Score(self.default_hparams.gender_num, average='macro', mdmc_average='global')
+        self.race_f1 = F1Score(self.default_hparams.race_num, average='macro', mdmc_average='global')
+        self.age_confusion = ConfusionMatrix(self.default_hparams.age_num_targets)
+        self.sex_confusion = ConfusionMatrix(self.default_hparams.gender_num)
+        self.race_confusion = ConfusionMatrix(self.default_hparams.race_num)
         self.softmax = nn.Softmax(dim=1)
 
     def forward(self, image, transforms):
@@ -134,9 +142,9 @@ class AgePrediction(pl.LightningModule):
         self.log('val-sex-acc', sex_acc, on_step=False, on_epoch=True, prog_bar=False)
         self.log('val-race-acc', race_acc, on_step=False, on_epoch=True, prog_bar=False)
 
-        val_dict =  {
-            'age_predict' : age_predict,
-            'age_targets' : age_targets,
+        val_dict ={
+            'age_predict': age_predict,
+            'age_targets': age_targets,
             'sex_predict': sex_predict,
             'sex_targets': sex_targets,
             'race_predict': race_predict,
@@ -203,7 +211,10 @@ class AgePrediction(pl.LightningModule):
         return predictions.cpu().detach().numpy()
 
     def configure_optimizers(self):
-        optimizer = torch.optim.AdamW(self.parameters(), lr=2e-5)
+        if self.default_hparams.optimizer == 'adamw':
+            optimizer = torch.optim.AdamW(self.parameters(), lr=self.default_hparams.lr)
+        elif self.default_hparams.optimizer == 'adam':
+            optimizer = torch.optim.Adam(self.parameters(), lr=self.default_hparams.lr)
         return optimizer
         # scheduler = {
         #             'scheduler': OneCycleLR(optimizer, max_lr=7e-5, steps_per_epoch=304, pct_start=0.15, epochs=30,

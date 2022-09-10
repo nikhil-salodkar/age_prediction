@@ -32,9 +32,9 @@ class AgeDataset(Dataset):
 
 
 class AgePredictionData(pl.LightningDataModule):
-    def __init__(self, full_data, train_batch=64, path='../data/wild_images'):
+    def __init__(self, hparams, full_data):
         super().__init__()
-        self.path = path
+        self.path = hparams.path
         self.full_data = full_data
         self.augmentations = [
             RandomHorizontalFlip(0.5),
@@ -50,8 +50,8 @@ class AgePredictionData(pl.LightningDataModule):
             Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
         ])
         self.transforms = Compose([Resize((256, 256)), ToTensor(), Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])])
-        self.train_batch = train_batch
-        self.val_batch = train_batch * 4
+        self.train_batch = hparams.batch_size
+        self.val_batch = self.train_batch * 4
 
     def setup(self, stage: Optional[str] = None):
         if stage == 'fit' or stage is None:
