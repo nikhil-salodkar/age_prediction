@@ -5,7 +5,7 @@ import torchvision
 from torch import nn
 
 import pytorch_lightning as pl
-from torch.optim.lr_scheduler import OneCycleLR
+# from torch.optim.lr_scheduler import OneCycleLR
 from torchmetrics import Accuracy, F1Score, ConfusionMatrix
 from torchvision.transforms import Compose, Resize, ToTensor, Normalize
 
@@ -13,7 +13,12 @@ from torchvision.transforms import Compose, Resize, ToTensor, Normalize
 class AgePredictResnet(nn.Module):
     def __init__(self, hparams):
         super().__init__()
-        self.model = torchvision.models.resnet101(pretrained=True)
+        if hparams.resnet_type == 'resnet101':
+            self.model = torchvision.models.resnet101(pretrained=True)
+        elif hparams.resnet_type == 'resnet50':
+            self.model = torchvision.models.resnet50(pretrained=True)
+        else:
+            self.model = torchvision.models.resnet152(pretrained=True)
         self.model.fc = nn.Linear(2048, hparams.layer1)
         self.age_linear1 = nn.Linear(hparams.layer1, hparams.layer2)
         self.age_linear2 = nn.Linear(hparams.layer2, hparams.layer3)
@@ -26,8 +31,8 @@ class AgePredictResnet(nn.Module):
         self.race_out = nn.Linear(hparams.layer3, hparams.race_num)
         if hparams.activation == 'ReLU':
             self.activation = nn.ReLU()
-        elif hparams.activation == 'tanh':
-            self.activation = nn.Tanh()
+        elif hparams.activation == 'gelu':
+            self.activation = nn.GELU()
         self.dropout = nn.Dropout(hparams.dropout_val)
 
     def forward(self, x):
@@ -211,10 +216,7 @@ class AgePrediction(pl.LightningModule):
         return predictions.cpu().detach().numpy()
 
     def configure_optimizers(self):
-        if self.default_hparams.optimizer == 'adamw':
-            optimizer = torch.optim.AdamW(self.parameters(), lr=self.default_hparams.lr)
-        elif self.default_hparams.optimizer == 'adam':
-            optimizer = torch.optim.Adam(self.parameters(), lr=self.default_hparams.lr)
+        optimizer = torch.optim.AdamW(self.parameters(), lr=self.default_hparams.lr)
         return optimizer
         # scheduler = {
         #             'scheduler': OneCycleLR(optimizer, max_lr=7e-5, steps_per_epoch=304, pct_start=0.15, epochs=30,

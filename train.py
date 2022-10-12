@@ -4,7 +4,6 @@ import pandas as pd
 import pytorch_lightning as pl
 import torch
 
-from sweep_configuration import sweep_config
 import wandb
 from pytorch_lightning.callbacks import ModelCheckpoint, EarlyStopping, LearningRateMonitor
 from pytorch_lightning.loggers import WandbLogger

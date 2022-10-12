@@ -4,6 +4,8 @@ metric:
   name: total-f1score
   goal: maximize
 parameters:
+  resnet_type:
+    values: ['resnet101', 'resnet150', 'resnet50']
   layer1:
     values: [1024, 512]
   layer2:
@@ -11,21 +13,19 @@ parameters:
   layer3:
     values: [128, 64, 256]
   dropout_val:
-    values: [0.0, 0.2, 0.4, 0.5]
+    values: [0.2, 0.3, 0.4]
   lr:
     distribution: log_uniform
-    max: -9.21 # exp(-9.21) = 1e-4
-    min: -13.81 # exp(-13.81) = 1e-6
+    max: -6.907 # exp(-9.21) = 1e-4
+    min: -11.512 # exp(-13.81) = 1e-6
   epochs:
-    value: 30
+    value: 25
   path:
     value: './data/wild_images'
   batch_size:
-    values: [32, 64, 128]
+    values: [12, 16, 32, 64]
   activation:
-    values: ['tanh', 'ReLU']
-  optimizer:
-    values: ['adam', 'adamw']
+    values: ['gelu', 'ReLU']
   age_num_targets:
     value: 9
   gender_num:
