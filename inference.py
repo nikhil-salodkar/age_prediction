@@ -4,7 +4,7 @@ from torchvision.transforms import Compose, Resize, ToTensor, Normalize
 
 from model import AgePrediction
 
-path = './lightning_logs/resnet101_weighted_no_scheduling/17daip11/checkpoints/epoch=11-total-f1score=0.748.ckpt'
+path = './lightning_logs/UTK_Age_Prediction/796l8aot/checkpoints/epoch=8-total-f1score=0.760.ckpt'
 age_dict = {
     0: '0 to 10', 1: '10 to 20', 2: '20 to 30', 3: '30 to 40', 4: '40 to 50', 5: '50 to 60',
     6: '60 to 70', 7: '70 to 80', 8: 'Above 80'
@@ -13,6 +13,7 @@ sex_dict = {0: 'Male', 1: 'Female'}
 race_dict = {
     0: 'White', 1: 'Black', 2: 'Asian', 3: 'Indian', 4: 'Others (like Hispanic, Latino, Middle Eastern etc)'
 }
+
 
 @st.experimental_memo
 def load_trained_model(model_path):
